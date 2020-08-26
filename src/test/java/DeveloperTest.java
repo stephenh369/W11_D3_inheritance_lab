@@ -29,4 +29,10 @@ public class DeveloperTest {
         developer.setName("Rudy");
         assertEquals("Rudy", developer.getName());
     }
+
+    @Test
+    public void cannotSetNameNull() {
+        developer.setName(null);
+        assertEquals("Jimmy", developer.getName());
+    }
 }
